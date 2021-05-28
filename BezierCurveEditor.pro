@@ -5,9 +5,9 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 CONFIG += c++17
 
 CONFIG(debug, debug|release) {
-    DESTDIR = $$OUT_PWD/../SvgDebug
+    DESTDIR = $$OUT_PWD/../BezierCurveEditor
 } else {
-    DESTDIR = $$OUT_PWD/../SvgRelease
+    DESTDIR = $$OUT_PWD/../BezierCurveEditor
 }
 
 MOC_DIR = ../common/build/moc
@@ -17,9 +17,9 @@ UI_DIR =  ../common/build/ui
 QMAKE_CXXFLAGS_WARN_OFF -= -Wunused-parameter
 
 #CONFIG(debug, debug|release) {
-#    QMAKE_POST_LINK += windeployqt.exe $$OUT_PWD/../SvgDebug
+#    QMAKE_POST_LINK += windeployqt.exe $$OUT_PWD/../BezierCurveEditor
 #} else {
-#    QMAKE_POST_LINK += windeployqt.exe $$OUT_PWD/../SvgRelease
+#    QMAKE_POST_LINK += windeployqt.exe $$OUT_PWD/../BezierCurveEditor
 #}
 
 #win32:OBJECTS_DIR = ../common/build/o/win32
